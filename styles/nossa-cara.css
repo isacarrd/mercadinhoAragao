@@ -1,4 +1,4 @@
-#nossa-cara{
+#nossa-cara {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,31 +6,33 @@
   gap: 1em;
 }
 
-.texto{
+.texto {
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 0.625em;
 }
 
-h2{
+h2 {
   font: var(--h2-dk);
   color: var(--preto);
 }
-p{
+#p-cara {
   width: 420px;
+}
+p {
   font: var(--ph-dk);
   color: var(--preto);
 }
 
-#foto-bloco{
+#foto-bloco {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5em
+  gap: 0.5em;
 }
 
-#img-mercado{
+#img-mercado {
   width: 510px;
   height: 375px;
   object-fit: cover;
@@ -38,22 +40,47 @@ p{
   border-radius: 15px;
 }
 
+/* TABLET */
+@media (max-width: 1050px) {
+  #nossa-cara {
+    padding: 6.25rem 1.5rem;
+    justify-content: center;
+  }
+  #img-mercado {
+    width: 438px;
+    height: 322px;
+  }
+  .texto {
+    padding: 0 0.625rem;
+  }
+  h2 {
+    font: var(--h2-tb);
+  }
+  p {
+    width: fit-content;
+    font: var(--ph-tb);
+  }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  #nossa-cara{
+  #nossa-cara {
     padding: 2em 1.5em;
   }
-  .texto{
-    padding: 0;
+  .texto {
+    padding: 0 0.625rem;
     gap: 0.75em;
   }
-  h2{
+  h2 {
     font: var(--h2-mb);
   }
-  p{
-    width: 120px;
+  #p-cara {
+    width: fit-content;
+  }
+  p {
     font: var(--ph-mb);
   }
-  #img-mercado{
+  #img-mercado {
     width: 193px;
     height: 101px;
   }

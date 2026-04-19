@@ -21,7 +21,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.125em;
+  gap: 3.12em;
   padding: 1.5em 0;
 }
 
@@ -38,7 +38,7 @@ a.btn-contact {
   color: var(--branco);
 }
 
-a{
+a {
   transition: all 0.35s;
 }
 
@@ -48,6 +48,25 @@ a.btn-contact:hover {
   transform: translateY(-0.25em);
 }
 
+/* TABLET */
+@media (max-width: 1080px) {
+  #hero {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  a.btn-contact {
+    font: var(--footer-tb);
+    padding: 0.75rem;
+    gap: 0.5rem;
+    border-radius: 15px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -62,9 +81,9 @@ a.btn-contact:hover {
     padding: 4em 0;
   }
   a.btn-contact {
-    padding: 0.75em;
     font: var(--footer-destaque-mb);
-    gap: 0.5em;
+    padding: 0.75rem;
+    gap: 0.5rem;
     border-radius: 15px;
     img {
       width: 20px;
