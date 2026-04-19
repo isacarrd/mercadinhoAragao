@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadinho Aragão</title>
   <link rel="shortcut icon" href="/assets/icons/mercado-logos/icon-gradiente.svg" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/index.css">
 
   <!-- CDN GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
   <header>
@@ -21,12 +22,8 @@
   <secion id="hero">
     <div id="center-hero">
       <picture>
-
-        <source media="(max-width: 768px)" srcset="/assets/icons/mercado-logos/mobile-logo.svg" type="image/svg+xml">
-        <source media="(min-width: 769px) and (max-width: 1050px)" srcset="/assets/icons/mercado-logos/desktop-logo.svg" type="image/svg+xml">
-
+        <source media="(max-width: 768px)" srcset="/assets/icons/mercado-logos/desktop-logo.svg" type="image/svg+xml">
         <img src="/assets/icons/mercado-logos/logo-big.svg" alt="Logo mercado">
-
       </picture>
       <a href="https://chatgpt.com/?temporary-chat=true" class="btn-contact">
         <img src="/assets/icons/whatsapp-icon.svg" alt="whatsapp">
@@ -34,5 +31,18 @@
       </a>
     </div>
   </secion>
+  <section id="nossa-cara">
+    <div class="texto">
+      <h2>Nossa cara</h2>
+      <p>O <strong>Mercadinho Aragão</strong> sempre está esperando por você! </p>
+    </div>
+    <div id="foto-bloco">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/assets/images/linha-mobile.svg" type="image/svg+xml">
+        <img src="/assets/images/linha-desktop.svg" alt="Pequenos icones">
+      </picture>
+      <img src="/assets/images/imagem2.jpg" alt="Imagem Mercado Frente" id="img-mercado">
+    </div>
+  </section>
 </body>
 </html>
