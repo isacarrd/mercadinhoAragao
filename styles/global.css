@@ -32,52 +32,55 @@
   );
 
   /* FONTES */
-  --font-family: "Inter", sans-serif;
+  --font-family1: "Inter", sans-serif;
+  --font-family2: "Montserrat Alternates", sans-serif;
   /* DESKTOP */
-  --h1-dk: bold 36px/160% var(--font-family);
-  --h2-dk: bold 32px/150% var(--font-family);
-  --ph-dk: normal 20px/120% var(--font-family);
-  --ph-bloco-dk: normal 16px/120% var(--font-family);
+  --h1-dk: bold 36px/160% var(--font-family2);
+  --h2-dk: bold 32px/150% var(--font-family2);
+  --ph-dk: normal 20px/120% var(--font-family1);
+  --ph-bloco-dk: normal 16px/120% var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-dk: bold 32px/150% var(--font-family);
+  --bloco-h3-dk: bold 32px/150% var(--font-family2);
   --bloco-h3-dk-letra: -0.05em;
-  --bloco-destaque-dk: 900 32px/150% var(--font-family);
+  --bloco-destaque-dk: 900 32px/150% var(--font-family2);
   --bloco-destaque-dk-letra: -0.05em;
 
-  --footer-dk: bold 20px/120% var(--font-family);
-  --footer-destaque-dk: bold 16px/120% var(--font-family);
+  --footer-dk: bold 20px/120% var(--font-family1);
+  --footer-destaque-dk: bold 16px/120% var(--font-family1);
 
   /* MOBILE */
-  --h1-mb: bold 20px/160% var(--font-family);
-  --h2-mb: bold 16px/150% var(--font-family);
-  --ph-mb: normal 14px/120% var(--font-family);
-  --ph-bloco-mb: normal 10px/120% var(--font-family);
+  --h1-mb: bold 20px/160% var(--font-family2);
+  --h2-mb: bold 16px/150% var(--font-family2);
+  --ph-mb: normal 14px/120% var(--font-family1);
+  --ph-bloco-mb: normal 10px/120% var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-mb: bold 12px/150% var(--font-family);
+  --bloco-h3-mb: bold 12px/150% var(--font-family2);
   --bloco-h3-mb-letra: -0.03em;
-  --bloco-destaque-mb: 900 12px/150% var(--font-family);
+  --bloco-destaque-mb: 900 12px/150% var(--font-family2);
   --bloco-destaque-mb-letra: -0.03em;
 
-  --footer-mb: bold 14px/120% var(--font-family);
-  --footer-destaque-mb: bold 12px/120% var(--font-family);
+  --footer-mb: bold 14px/120% var(--font-family1);
+  --footer-destaque-mb: bold 12px/120% var(--font-family1);
 }
-
 
 body {
   width: 100dvw;
   height: 100dvh;
-  background: var(--branco);
+  background: url("/assets/textures/grid3.png"),
+    var(--branco);
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: var(--vermelho-base);
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: var(--branco);
   border-radius: 20px;
 }
