@@ -35,34 +35,49 @@
   --font-family1: "Inter", sans-serif;
   --font-family2: "Montserrat Alternates", sans-serif;
   /* DESKTOP */
-  --h1-dk: bold 36px/160% var(--font-family2);
-  --h2-dk: bold 32px/150% var(--font-family2);
-  --ph-dk: normal 20px/120% var(--font-family1);
-  --ph-bloco-dk: normal 16px/120% var(--font-family1);
+  --h1-dk: 700 2.25rem/normal var(--font-family2);
+  --h2-dk: 700 2rem/normal var(--font-family2);
+  --ph-dk: 400 1.25rem/normal var(--font-family1);
+  --ph-bloco-dk: 400 1rem/normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-dk: bold 32px/150% var(--font-family2);
-  --bloco-h3-dk-letra: -0.05em;
-  --bloco-destaque-dk: 900 32px/150% var(--font-family2);
-  --bloco-destaque-dk-letra: -0.05em;
+  --bloco-h3-dk: 700 2rem/normal var(--font-family2);
+  --bloco-h3-dk-letra: -0.1rem;
+  --bloco-destaque-dk: 900 2rem/normal var(--font-family2);
+  --bloco-destaque-dk-letra: -0.1rem;
 
-  --footer-dk: bold 20px/120% var(--font-family1);
-  --footer-destaque-dk: bold 16px/120% var(--font-family1);
+  --footer-dk: 700 1.25rem/normal var(--font-family1);
+  --footer-destaque-dk: 700 1rem/normal var(--font-family1);
+
+    /* TABLET */
+  --h1-tb: 700 1.875rem/normal var(--font-family2);
+  --h2-tb: 700 1.5rem/normal var(--font-family2);
+  --ph-tb: 400 1.25rem/normal var(--font-family1);
+  --ph-bloco-tb: 400 1rem/normal var(--font-family1);
+
+  /* adicionar a especificação da font e letter-spacing no elemento */
+  --bloco-h3-tb: 700 1.5rem/normal var(--font-family2);
+  --bloco-h3-tb-letra: -0.075rem;
+  --bloco-destaque-tb: 900 1.5rem/normal var(--font-family2);
+  --bloco-destaque-tb-letra: -0.075rem;
+
+  --footer-tb: 700 1rem/normal var(--font-family1);
+  --footer-destaque-tb: 700 0.875rem/normal var(--font-family1);
 
   /* MOBILE */
-  --h1-mb: bold 20px/160% var(--font-family2);
-  --h2-mb: bold 16px/150% var(--font-family2);
-  --ph-mb: normal 14px/120% var(--font-family1);
-  --ph-bloco-mb: normal 10px/120% var(--font-family1);
+  --h1-mb: 700 1.25rem/normal var(--font-family2);
+  --h2-mb: 700 1rem/normal var(--font-family2);
+  --ph-mb: 400 0.875rem/normal var(--font-family1);
+  --ph-bloco-mb: 400 0.625rem/normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-mb: bold 12px/150% var(--font-family2);
-  --bloco-h3-mb-letra: -0.03em;
-  --bloco-destaque-mb: 900 12px/150% var(--font-family2);
-  --bloco-destaque-mb-letra: -0.03em;
+  --bloco-h3-mb: 700 0.75/normal var(--font-family2);
+  --bloco-h3-mb-letra: -0.0225rem
+  --bloco-destaque-mb: 900 0.75rem/normal var(--font-family2);
+  --bloco-destaque-mb-letra: -0.0225rem
 
-  --footer-mb: bold 14px/120% var(--font-family1);
-  --footer-destaque-mb: bold 12px/120% var(--font-family1);
+  --footer-mb: 700 0.875rem/normal var(--font-family1);
+  --footer-destaque-mb: 700 0.75rem/normal var(--font-family1);
 }
 
 body {
