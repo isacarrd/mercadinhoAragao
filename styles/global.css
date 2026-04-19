@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  /* CORES */
+  --vermelho-base: #ee0c00;
+  --amarelo: #fff94f;
+  --preto: #14110f;
+  --branco: #e6e6ea;
+
+  /* colocar a cor base (vermelho) junto ao elemento [background: gradiente, base] */
+  --gradiente-vermelho: linear-gradient(
+    135deg,
+    #a6251d33 0%,
+    #a6251d33 50%,
+    #e6e6ea33 100%
+  );
+
+  --gradiente-amarelo: linear-gradient(
+    135deg,
+    var(--amarelo) 100%,
+    var(--branco) 100%
+  );
+  --gradiente-card: linear-gradient(
+    135deg,
+    var(--vermelho-base) 28%,
+    var(--amarelo) 100%
+  );
+
+  /* FONTES */
+  --font-family: "Inter", sans-serif;
+  /* DESKTOP */
+  --h1-dk: bold 36px/160% var(--font-family);
+  --h2-dk: bold 32px/150% var(--font-family);
+  --ph-dk: normal 20px/120% var(--font-family);
+  --ph-bloco-dk: normal 16px/120% var(--font-family);
+
+  /* adicionar a especificação da font e letter-spacing no elemento */
+  --bloco-h3-dk: bold 32px/150% var(--font-family);
+  --bloco-h3-dk-letra: -0.05em;
+  --bloco-destaque-dk: 900 32px/150% var(--font-family);
+  --bloco-destaque-dk-letra: -0.05em;
+
+  --footer-dk: bold 20px/120% var(--font-family);
+  --footer-destaque-dk: bold 16px/120% var(--font-family);
+
+  /* MOBILE */
+  --h1-mb: bold 20px/160% var(--font-family);
+  --h2-mb: bold 16px/150% var(--font-family);
+  --ph-mb: normal 14px/120% var(--font-family);
+  --ph-bloco-mb: normal 10px/120% var(--font-family);
+
+  /* adicionar a especificação da font e letter-spacing no elemento */
+  --bloco-h3-mb: bold 12px/150% var(--font-family);
+  --bloco-h3-mb-letra: -0.03em;
+  --bloco-destaque-mb: 900 12px/150% var(--font-family);
+  --bloco-destaque-mb-letra: -0.03em;
+
+  --footer-mb: bold 14px/120% var(--font-family);
+  --footer-destaque-mb: bold 12px/120% var(--font-family);
+}
+
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background: var(--branco);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--vermelho-base);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--branco);
+  border-radius: 20px;
+}
