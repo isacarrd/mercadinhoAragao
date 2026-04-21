@@ -26,7 +26,7 @@
     var(--branco) 100%
   );
   --gradiente-card: linear-gradient(
-    135deg,
+    90deg,
     var(--vermelho-base) 28%,
     var(--amarelo) 100%
   );
@@ -71,10 +71,10 @@
   --ph-bloco-mb: 400 0.625rem/normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-mb: 700 0.75/normal var(--font-family2);
-  --bloco-h3-mb-letra: -0.0225rem
+  --bloco-h3-mb: 700 0.75rem/normal var(--font-family2);
+  --bloco-h3-mb-letra: -0.0225rem;
   --bloco-destaque-mb: 900 0.75rem/normal var(--font-family2);
-  --bloco-destaque-mb-letra: -0.0225rem
+  --bloco-destaque-mb-letra: -0.0225rem;
 
   --footer-mb: 700 0.875rem/normal var(--font-family1);
   --footer-destaque-mb: 700 0.75rem/normal var(--font-family1);
