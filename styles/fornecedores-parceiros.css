@@ -12,6 +12,8 @@ section#fornecedores-parceiros {
   align-items: center;
   p {
     text-align: center;
+    opacity: 70%;
+    color: var(--preto)
   }
 }
 
