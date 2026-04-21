@@ -1,0 +1,189 @@
+section#avaliacoes {
+  display: flex;
+  padding: 3.5rem 6.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  align-self: stretch;
+}
+
+#caixas {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding: 1.25rem 3rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.caixa {
+  display: flex;
+  padding: 2.5rem 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 1 18rem;
+
+  border-radius: 1.5rem;
+  padding-top: 5px;
+  background: linear-gradient(#e6e6ea, #e6e6ea) padding-box,
+    linear-gradient(90deg, #e00c00, #ffd000) border-box;
+  border-top: 5px solid transparent;
+  box-shadow: 0 4px 15.9px 2px rgba(20, 17, 15, 0.2);
+}
+
+.txt {
+  display: flex;
+  width: 13.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+div.normal > div.txt h3 {
+  font: var(--bloco-h3-dk);
+  letter-spacing: var(--bloco-h3-dk-letra);
+  color: var(--preto);
+}
+div.normal > div.txt p {
+  font: var(--ph-bloco-dk);
+  color: var(--preto);
+  opacity: 70%;
+}
+
+#caixa1 {
+  height: 25rem;
+  justify-content: center;
+}
+
+#caixa2 {
+  position: relative;
+  flex: 2 1 30rem;
+  width: auto;
+  height: 25rem;
+  padding: 2.5rem 2rem 2.5rem 19rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#caixa2 #Tela1 {
+  position: absolute;
+  left: 2.1875rem;
+  top: -0.76306rem;
+}
+
+#caixa3 {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  padding: 2.5rem 25rem 2.5rem 2rem;
+  justify-content: center;
+  flex-shrink: 0;
+}
+#caixa3 #Tela2 {
+  position: absolute;
+  right: 1.9375rem;
+  bottom: 0.01306rem;
+}
+
+#caixa4 {
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
+}
+#caixa4 h3 {
+  font: var(--bloco-destaque-dk);
+  letter-spacing: var(--bloco-destaque-dk-letra);
+  color: var(--vermelho-base);
+}
+
+/* TABLET */
+@media (max-width: 1050px) {
+  section#avaliacoes {
+    padding: 3.5rem 1.5rem;
+  }
+  #caixas {
+    padding: 1.25rem 5.625rem;
+  }
+  #caixa1 {
+    padding: 5rem 2rem;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  div.normal > div.txt h3 {
+    font: var(--bloco-h3-tb);
+    letter-spacing: var(--bloco-h3-tb-letra);
+  }
+  div.normal > div.txt p {
+    font: var(--ph-bloco-tb);
+  }
+  #caixa2 #Tela1 {
+    top: -0.76306rem;
+  }
+  #caixa4 {
+    flex: 0 0 auto;
+    padding: 5rem 2rem;
+  }
+  #caixa4 h3 {
+    font: var(--bloco-destaque-tb);
+    letter-spacing: var(--bloco-destaque-tb-letra);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  section#avaliacoes {
+    padding: 0 1.5rem;
+  }
+  #caixas {
+    padding: 1.25rem 2.5rem;
+    flex: 1 0 0;
+  }
+  div.normal > div.txt h3 {
+    font: var(--bloco-h3-mb);
+    letter-spacing: var(--bloco-h3-mb-letra);
+  }
+  div.normal > div.txt p {
+    font: var(--ph-bloco-mb);
+  }
+  div.txt {
+    width: auto;
+  }
+  #caixa1 {
+    align-items: start;
+    width: 100%;
+    height: fit-content;
+    padding: 2.5rem 2rem;
+  }
+  #caixa2 {
+    width: 19.8125rem;
+    height: 15.625rem;
+    padding: 2.5rem 2.25rem 2.5rem 13.875rem;
+  }
+  #caixa2 #Tela1 {
+    left: 0.9375rem;
+    top: -0.29056rem;
+  }
+  #caixa3 {
+    height: 17.625rem;
+    padding: 2.5rem 13.25rem 2.5rem 1.25rem;
+  }
+  #caixa3 #Tela2 {
+    right: 0.9375rem;
+    bottom: 0.01306rem;
+  }
+  #caixa4 {
+    width: 100%;
+    height: 100%;
+    padding: 5.5rem 5.25rem;
+  }
+  #caixa4 h3 {
+    text-align: center;
+    font: var(--bloco-destaque-mb);
+    letter-spacing: var(--bloco-destaque-mb-letra);
+  }
+}
