@@ -22,6 +22,7 @@ h2 {
 }
 p {
   font: var(--ph-dk);
+  opacity: 70%;
   color: var(--preto);
 }
 
