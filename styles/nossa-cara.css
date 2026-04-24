@@ -27,18 +27,28 @@ p {
 }
 
 #foto-bloco {
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
 }
 
+.bloco-linha {
+  width: 100%;
+}
+
 #img-mercado {
-  width: 510px;
+  width: 100%;
   height: 375px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+#img-mercado img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  border-radius: 15px;
 }
 
 /* TABLET */
@@ -48,7 +58,7 @@ p {
     justify-content: center;
   }
   #img-mercado {
-    width: 438px;
+    width: 100%;
     height: 322px;
   }
   .texto {
@@ -82,7 +92,7 @@ p {
     font: var(--ph-mb);
   }
   #img-mercado {
-    width: 193px;
-    height: 101px;
+    width: 100%;
+    height: 140px;
   }
 }
