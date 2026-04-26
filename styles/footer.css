@@ -1,0 +1,134 @@
+footer {
+  display: flex;
+  padding: 3.875rem 6.25rem 1.5rem 6.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  align-self: stretch;
+
+  background: linear-gradient(
+      94deg,
+      rgba(224, 12, 0, 0.2) 14.19%,
+      rgba(230, 230, 234, 0.301) 79.88%
+    ),
+    var(--vermelho-base);
+}
+
+#infos-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+#metodos-pag {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.tilt {
+  font: var(--footer-dk);
+  color: var(--branco);
+  opacity: 100%;
+}
+
+#metodos {
+  max-width: 27.8125rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1.25rem 1.5625rem;
+  flex-wrap: wrap;
+}
+
+#txt-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+
+#hor-fun {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+#hor-fun > p {
+  color: var(--branco);
+  opacity: 100%;
+}
+
+#loc-info .destaque-fot {
+  font: var(--footer-destaque-dk);
+  color: var(--branco);
+  opacity: 100%;
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  align-self: stretch;
+}
+
+#infos > p {
+  opacity: 100%;
+  color: var(--branco);
+}
+
+/* TABLET */
+@media (max-width: 1050px) {
+  footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .tilt {
+    font: var(--footer-tb);
+  }
+  #loc-info .destaque-fot {
+    font: var(--footer-destaque-tb);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 1.5rem;
+    gap: 5rem;
+  }
+  #metodos-pag{
+    gap: 1.5rem;
+  }
+  #metodos{
+    gap: 1.25rem 1.5625rem;
+  }
+  #metodos img{
+    max-width: 48px;
+  }
+  #infos-add {
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+  #txt-foot{
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .tilt {
+    font: var(--footer-mb);
+  }
+  #loc-info .destaque-fot {
+    font: var(--footer-destaque-mb);
+  }
+}
