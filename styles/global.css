@@ -12,25 +12,6 @@
   --preto: #14110f;
   --branco: #e6e6ea;
 
-  /* colocar a cor base (vermelho) junto ao elemento [background: gradiente, base] */
-  --gradiente-vermelho: linear-gradient(
-    135deg,
-    #a6251d33 0%,
-    #a6251d33 50%,
-    #e6e6ea33 100%
-  );
-
-  --gradiente-amarelo: linear-gradient(
-    135deg,
-    var(--amarelo) 100%,
-    var(--branco) 100%
-  );
-  --gradiente-card: linear-gradient(
-    90deg,
-    var(--vermelho-base) 28%,
-    var(--amarelo) 100%
-  );
-
   /* FONTES */
   --font-family1: "Inter", sans-serif;
   --font-family2: "Montserrat Alternates", sans-serif;
