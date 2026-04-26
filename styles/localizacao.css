@@ -28,18 +28,21 @@ iframe {
   section#localizacao {
     padding: 3rem 1.5rem;
   }
+  div#edit {
+    width: 15rem;
+  }
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  section#localizacao{
+  section#localizacao {
     padding: 3rem 1.5rem;
   }
   div#loc-map {
     width: 72%;
     height: 100%;
   }
-  #txt-loc{
+  #txt-loc {
     width: 194px;
   }
 }
