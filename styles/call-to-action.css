@@ -1,0 +1,126 @@
+section#call-to-action {
+  overflow: hidden;
+  display: flex;
+  padding: 7.5rem 6.25rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+#bloco {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  overflow: visible;
+  padding: 6.25rem 3rem;
+  gap: 0.5rem;
+  flex: 1 0 0;
+
+  border-radius: 1.9375rem;
+  background: url("/assets/textures/Perlin\(contour\).png"),
+    linear-gradient(
+      94deg,
+      rgba(20, 17, 15, 0.12) 0.44%,
+      rgba(230, 230, 234, 0.12) 54.32%
+    ),
+    var(--preto);
+  background-size: auto, auto, cover, cover;
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
+
+  background-blend-mode: multiply, normal, normal, normal;
+}
+
+#conteudo {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 1.5rem;
+}
+
+#txt-ca {
+  padding-right: 28%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  gap: 0.75rem;
+}
+
+#txt-ca h1 {
+  font: var(--h1-dk);
+  color: var(--branco);
+}
+#txt-ca p {
+  font: var(--ph-dk);
+  color: var(--branco);
+}
+
+#carro-merc {
+  position: absolute;
+  left: 53%;
+  top: 2%;
+}
+
+/* TABLET */
+@media (max-width: 1050px) {
+  section#call-to-action {
+    padding: 7.5rem 6.25rem;
+  }
+  #bloco {
+    padding: 6.25rem 3rem 28.875rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #conteudo {
+    padding: 0;
+  }
+  #txt-ca {
+    padding: 0;
+    height: fit-content;
+  }
+  #txt-ca h1 {
+    font: var(--h1-tb);
+  }
+  #txt-ca p {
+    font: var(--ph-tb);
+  }
+  #carro-merc {
+    left: 38%;
+    top: 34%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  section#call-to-action {
+    padding: 3rem 1.5rem;
+  }
+  #bloco {
+    padding: 3rem 1.5rem 13.4375rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #conteudo {
+    padding: 0;
+  }
+  #txt-ca {
+    padding: 0;
+    height: fit-content;
+  }
+  #txt-ca h1 {
+    font: var(--h1-mb);
+  }
+  #txt-ca p {
+    font: var(--ph-mb);
+  }
+  #carro-merc {
+    left: 22%;
+    top: 41%;
+  }
+}
