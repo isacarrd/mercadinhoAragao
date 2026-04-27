@@ -72,25 +72,10 @@ body {
     url("/assets/textures/Vector3-png.png"),
     url("/assets/textures/Vector4-png.png");
 
-  background-position: 0 0,
-    /* Vector 1 */
-    1% 13%,
-    /* Vector 2 */ 
-    102% 25%, 
-    /* Vector 3 */ 
-    -1% 52%, 
-    /* Vector 4 */ 
-    105% 81%;
-
-  background-size: auto,
-  /* Vector 1 */
-    50vw, 
-    /* Vector 2 */
-    60vw,
-    /* Vector 3 */
-    45vw,
-    /* Vector 4 */
-    55vw; 
+  background-position: 0 0, /* Vector 1 */ -125% 13%, /* Vector 2 */ 240% 34%,
+    /* Vector 3 */ -74% 57%, /* Vector 4 */ 225% 81%;
+  background-size: auto, /* Vector 1 */ 78vw, /* Vector 2 */ 78vw,
+    /* Vector 3 */ 78vw, /* Vector 4 */ 78vw;
 
   background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: scroll, scroll, scroll, scroll, scroll;
@@ -106,7 +91,7 @@ body::before {
 
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 
-  opacity: 0.20;
+  opacity: 0.2;
   mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 9999;
