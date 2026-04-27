@@ -32,15 +32,23 @@ a.btn-contact {
   text-decoration: none;
   padding: 1em;
   gap: 0.5em;
-  background: var(--gradiente-vermelho), var(--vermelho-base);
+  background: linear-gradient(
+      94deg,
+      rgba(224, 12, 0, 0.2) 14.19%,
+      rgba(230, 230, 234, 0.301) 79.88%
+    ),
+    var(--vermelho-base);
   border-radius: 30px;
   font: var(--footer-dk);
   color: var(--branco);
 }
 
-a {
+#center-hero > a {
+  text-decoration: none;
+  color: var(--branco);
   transition: all 0.35s;
 }
+
 
 a.btn-contact:hover {
   box-sizing: border-box;
