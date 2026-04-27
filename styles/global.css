@@ -16,58 +16,100 @@
   --font-family1: "Inter", sans-serif;
   --font-family2: "Montserrat Alternates", sans-serif;
   /* DESKTOP */
-  --h1-dk: 700 2.25rem/normal var(--font-family2);
-  --h2-dk: 700 2rem/normal var(--font-family2);
-  --ph-dk: 400 1.25rem/normal var(--font-family1);
-  --ph-bloco-dk: 400 1rem/normal var(--font-family1);
+  --h1-dk: 700 2.25rem / normal var(--font-family2);
+  --h2-dk: 700 2rem / normal var(--font-family2);
+  --ph-dk: 400 1.25rem / normal var(--font-family1);
+  --ph-bloco-dk: 400 1rem / normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-dk: 700 2rem/normal var(--font-family2);
+  --bloco-h3-dk: 700 2rem / normal var(--font-family2);
   --bloco-h3-dk-letra: -0.1rem;
-  --bloco-destaque-dk: 900 2rem/normal var(--font-family2);
+  --bloco-destaque-dk: 900 2rem / normal var(--font-family2);
   --bloco-destaque-dk-letra: -0.1rem;
 
-  --footer-dk: 700 1.25rem/normal var(--font-family1);
-  --footer-destaque-dk: 700 1rem/normal var(--font-family1);
+  --footer-dk: 700 1.25rem / normal var(--font-family1);
+  --footer-destaque-dk: 700 1rem / normal var(--font-family1);
 
-    /* TABLET */
-  --h1-tb: 700 1.875rem/normal var(--font-family2);
-  --h2-tb: 700 1.5rem/normal var(--font-family2);
-  --ph-tb: 400 1.25rem/normal var(--font-family1);
-  --ph-bloco-tb: 400 1rem/normal var(--font-family1);
+  /* TABLET */
+  --h1-tb: 700 1.875rem / normal var(--font-family2);
+  --h2-tb: 700 1.5rem / normal var(--font-family2);
+  --ph-tb: 400 1.25rem / normal var(--font-family1);
+  --ph-bloco-tb: 400 1rem / normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-tb: 700 1.5rem/normal var(--font-family2);
+  --bloco-h3-tb: 700 1.5rem / normal var(--font-family2);
   --bloco-h3-tb-letra: -0.075rem;
-  --bloco-destaque-tb: 900 1.5rem/normal var(--font-family2);
+  --bloco-destaque-tb: 900 1.5rem / normal var(--font-family2);
   --bloco-destaque-tb-letra: -0.075rem;
 
-  --footer-tb: 700 1rem/normal var(--font-family1);
-  --footer-destaque-tb: 700 0.875rem/normal var(--font-family1);
+  --footer-tb: 700 1rem / normal var(--font-family1);
+  --footer-destaque-tb: 700 0.875rem / normal var(--font-family1);
 
   /* MOBILE */
-  --h1-mb: 700 1.25rem/normal var(--font-family2);
-  --h2-mb: 700 1rem/normal var(--font-family2);
-  --ph-mb: 400 0.875rem/normal var(--font-family1);
-  --ph-bloco-mb: 400 0.625rem/normal var(--font-family1);
+  --h1-mb: 700 1.25rem / normal var(--font-family2);
+  --h2-mb: 700 1rem / normal var(--font-family2);
+  --ph-mb: 400 0.875rem / normal var(--font-family1);
+  --ph-bloco-mb: 400 0.625rem / normal var(--font-family1);
 
   /* adicionar a especificação da font e letter-spacing no elemento */
-  --bloco-h3-mb: 700 0.75rem/normal var(--font-family2);
+  --bloco-h3-mb: 700 0.75rem / normal var(--font-family2);
   --bloco-h3-mb-letra: -0.0225rem;
-  --bloco-destaque-mb: 900 0.75rem/normal var(--font-family2);
+  --bloco-destaque-mb: 900 0.75rem / normal var(--font-family2);
   --bloco-destaque-mb-letra: -0.0225rem;
 
-  --footer-mb: 700 0.875rem/normal var(--font-family1);
-  --footer-destaque-mb: 700 0.75rem/normal var(--font-family1);
+  --footer-mb: 700 0.875rem / normal var(--font-family1);
+  --footer-destaque-mb: 700 0.75rem / normal var(--font-family1);
 }
 
 body {
   width: 100dvw;
-  height: 100dvh;
-  background: url("/assets/textures/grid3.png"),
-    var(--branco);
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
+  min-height: 100dvh;
+  background-color: var(--branco);
+
+  background-image: url("/assets/textures/grid3.png"),
+    url("/assets/textures/Vector1-png.png"),
+    url("/assets/textures/Vector2-png.png"),
+    url("/assets/textures/Vector3-png.png"),
+    url("/assets/textures/Vector4-png.png");
+
+  background-position: 0 0,
+    /* Vector 1 */
+    1% 13%,
+    /* Vector 2 */ 
+    130% 25%, 
+    /* Vector 3 */ 
+    -1% 52%, 
+    /* Vector 4 */ 
+    105% 81%;
+
+  background-size: auto,
+  /* Vector 1 */
+    50vw, 
+    /* Vector 2 */
+    60vw,
+    /* Vector 3 */
+    45vw,
+    /* Vector 4 */
+    55vw; 
+
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, scroll;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+  opacity: 0.20;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 ::-webkit-scrollbar {
