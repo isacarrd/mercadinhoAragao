@@ -88,6 +88,15 @@ footer {
   color: var(--branco);
 }
 
+a {
+  text-decoration: none;
+  color: var(--branco);
+  transition: all 0.35s;
+}
+a:hover {
+  color: var(--preto);
+}
+
 /* TABLET */
 @media (max-width: 1050px) {
   footer {
@@ -108,20 +117,20 @@ footer {
     padding: 2rem 1.5rem;
     gap: 5rem;
   }
-  #metodos-pag{
+  #metodos-pag {
     gap: 1.5rem;
   }
-  #metodos{
+  #metodos {
     gap: 1.25rem 1.5625rem;
   }
-  #metodos img{
+  #metodos img {
     max-width: 48px;
   }
   #infos-add {
     flex-direction: column;
     gap: 4.5rem;
   }
-  #txt-foot{
+  #txt-foot {
     align-items: flex-start;
     gap: 2.5rem;
   }
