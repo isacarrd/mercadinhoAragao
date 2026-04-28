@@ -17,7 +17,7 @@
 <h2 id="layout">🎨 Visão da página</h2>
 
 <p align="center">
-    <img src="assets/images/github-img.png" alt="Layout Desktop" width="400px">
+    <img src="/assets/Capa.jpg" alt="Layout Desktop" width="400px">
 </p>
 
 <h2 id="objective">💡 | Objetivo</h2>
